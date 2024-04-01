@@ -2,13 +2,13 @@
 
 **Lab. Report \#5 – Software Reliability Assessment**
 
-| Group \#:       |   |
-|-----------------|---|
-| Student Names:  |   |
-|       Liam Brennan          |   |
-|        Ethan Bensler         |   |
-|           Andrew Duong      |   |
-|          Joseph Duong     |   |
+| Group 19:       |
+|-----------------|
+| Student Names:  |
+|       Liam Brennan          | 
+|        Ethan Bensler         | 
+|           Andrew Duong      |   
+|          Joseph Duong     |  
 
 # Introduction
 
