@@ -5,9 +5,10 @@
 | Group \#:       |   |
 |-----------------|---|
 | Student Names:  |   |
-|                 |   |
-|                 |   |
-|                 |   |
+|       Liam Brennan          |   |
+|        Ethan Bensler         |   |
+|           Andrew Duong      |   |
+|          Joseph Duong     |   |
 
 # Introduction
 
