@@ -19,7 +19,9 @@
 
 ![model-comparison-logs](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/95046408/1aa5b230-adea-4166-ab8e-b538929c9e63)
 
-The graph and table above clearly demonstrate that the TL and IFRSGB reliability models outperform others in fitting the failure data, thereby offering more accurate predictions for variables such as time to release, remaining failures, etc. Moreover, their Log-Likelihood scores, notably -137.074 for the TL model and -137.030 for the IFRSGB model, exceed those of alternative models, providing further evidence of their effectiveness.
+The graph and table above clearly demonstrate that the Truncated Logistic (TL) and IFR Generalized Salvia & Bollinger (IFRSGB) reliability models outperform others in fitting the failure data, thereby offering more accurate predictions for variables such as time to release and remaining failures. Moreover, their Log-Likelihood scores, notably -137.074 for the TL model and -137.030 for the IFRSGB model, exceed those of alternative models, providing further evidence of their effectiveness.
+
+The dataset utilized for C-SFRAT analysis is sourced from the CDS.DAT file. Despite our thorough search, we were unable to locate any pertinent information regarding the covariates E (execution time measured in hours), F (failure identification work measured in person hours), and C (computer time failure identification measured in hours) within the provided failure data. Consequently, we have opted to solely incorporate "None" as a covariate for assessing the models' performance.
 
 
 **Result of range analysis (an explanation of which part of data is good for proceeding with the analysis):**
