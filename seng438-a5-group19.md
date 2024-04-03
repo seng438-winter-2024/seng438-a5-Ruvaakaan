@@ -9,23 +9,39 @@
 |           Andrew Duong      |   
 |          Joseph Duong     |  
 
-# Introduction
+# Introduction 
 
-# 
+# Reliability Growth Testing 
 
-# Assessment Using Reliability Growth Testing 
+** Result of model comparison (two top models) **
 
-# Assessment Using Reliability Demonstration Chart 
+** Result of range analysis (an explanation of which part of data is good for proceeding with the analysis) **
 
-# 
+** Plots for failure rate and reliability of the SUT for the test data provided **
 
-# Comparison of Results
+** A discussion on decision making given a target failure rate **
+
+# Reliability Demonstration Chart Testing
+
+** 3 plots for MTTFmin, twice and half of it for your test data **
+
+MTTFmin = 
+
+RDC for MTTF * 2: 
+
+RDC for MTTF * 0.5: 
+
+RDC for MTTF: 
+
+** Explain your evaluation and justification of how you decided on MTTFmin **
+
+** A discussion on the advantages and disadvantages of RDC **
+
+# Comparison of Results from Part 1
 
 # Discussion on Similarity and Differences of the Two Techniques
 
 # How the team work/effort was divided and managed
-
-# 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 
