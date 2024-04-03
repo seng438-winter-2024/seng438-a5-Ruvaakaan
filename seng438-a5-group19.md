@@ -11,6 +11,8 @@
 
 # Introduction:
 
+NEEDS TO BE DONE
+
 # Reliability Growth Testing:
 
 # Result of model comparison (two top models):
@@ -52,13 +54,19 @@ RDC for MTTFmin:
 
 # Explain your evaluation and justification of how you decided on MTTFmin:
 
+NEEDS TO BE DONE
+
 # A discussion on the advantages and disadvantages of RDC:
 
 RDC facilitates efficient analysis of a system's reliability in terms of both time and cost. As outlined in the slides, it's important to note that RDC cannot precisely quantify the reliability of the system under test (SUT). Instead, it serves as a suggestion or indication regarding the acceptability of the SUT's reliability.
 
 # Comparison of Results from Part 1:
 
+NEEDS TO BE DONE
+
 # Discussion on Similarity and Differences of the Two Techniques:
+
+NEEDS TO BE EDITED
 
 Both Reliability Growth Testing (RGT) and Reliability Demonstration Chart (RDC) Testing aim to evaluate the reliability of a system through the analysis of failure data over time, utilizing statistical tools to make informed decisions regarding the system's reliability and its potential risks. However, while RGT primarily focuses on assessing the improvement in reliability over time during the development phase, RDC Testing is typically conducted towards the end of the development process to demonstrate that the system meets reliability requirements before deployment or release. This distinction highlights the timing and context in which each method is employed, despite their shared goals and methodologies.
 
