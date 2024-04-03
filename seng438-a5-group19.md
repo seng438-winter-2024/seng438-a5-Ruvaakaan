@@ -13,9 +13,9 @@
 
 # Reliability Growth Testing 
 
-** Result of model comparison (two top models) **
+**Result of model comparison (two top models)**
 
-** Result of range analysis (an explanation of which part of data is good for proceeding with the analysis) **
+**Result of range analysis (an explanation of which part of data is good for proceeding with the analysis) **
 
 ** Plots for failure rate and reliability of the SUT for the test data provided **
 
