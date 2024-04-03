@@ -19,7 +19,7 @@
 
 ![model-comparison-logs](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/95046408/1aa5b230-adea-4166-ab8e-b538929c9e63)
 
-The graphs above indicate that the TL and IFRSGB models excel in accuracy. The overlaid graphs illustrate their performance in representing the inputted data accurately. Additionally, their Log-Likelihood scores surpass those of other models, with the TL model scoring -137.074 and the IFRSGB model scoring -137.030, further validating their effectiveness.
+The graph and table above clearly demonstrate that the TL and IFRSGB reliability models outperform others in fitting the failure data, thereby offering more accurate predictions for variables such as time to release, remaining failures, etc. Moreover, their Log-Likelihood scores, notably -137.074 for the TL model and -137.030 for the IFRSGB model, exceed those of alternative models, providing further evidence of their effectiveness.
 
 
 **Result of range analysis (an explanation of which part of data is good for proceeding with the analysis):**
