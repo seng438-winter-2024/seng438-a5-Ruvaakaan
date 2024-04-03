@@ -36,6 +36,8 @@ The plot above reveals a downward trend in the number of failures within the sys
 
 # A discussion on decision making given a target failure rate:
 
+When making decisions based on a target failure rate, it's important to carefully assess the reliability and performance of the system or product under consideration. The target failure rate serves as a benchmark against which the observed failure rate is compared. If the observed failure rate falls within the acceptable range defined by the target failure rate, it indicates that the system is performing as expected and meets the reliability requirements. However, if the observed failure rate exceeds the target, it suggests potential issues that need to be addressed. By analyzing failure data and comparing it to the target rate, we can identify areas for improvement, through design modifications, enhanced quality control measures, or predictive maintenance strategies. Understanding the relationship between failure rates and associated costs enables informed decision-making, weighing the trade-offs between reducing failure rates and the investment required.
+
 # Reliability Demonstration Chart Testing:
 
 # 3 plots for MTTFmin, twice and half of it for your test data:
