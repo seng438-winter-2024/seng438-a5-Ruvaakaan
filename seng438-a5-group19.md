@@ -15,7 +15,7 @@
 
 **Result of model comparison (two top models):**
 
-![model-comparison](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/95046408/ee52dfee-2b49-48a4-9b2d-4cf63600dd51)
+![model-results-graph](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/95046408/8ac5b245-95a8-4f0d-9b68-7a8560aab430)
 
 ![model-comparison-logs](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/95046408/1aa5b230-adea-4166-ab8e-b538929c9e63)
 
