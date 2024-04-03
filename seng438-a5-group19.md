@@ -54,12 +54,32 @@ RDC for MTTFmin:
 
 # A discussion on the advantages and disadvantages of RDC:
 
+RDC facilitates efficient analysis of a system's reliability in terms of both time and cost. As outlined in the slides, it's important to note that RDC cannot precisely quantify the reliability of the system under test (SUT). Instead, it serves as a suggestion or indication regarding the acceptability of the SUT's reliability.
+
 # Comparison of Results from Part 1:
 
 # Discussion on Similarity and Differences of the Two Techniques:
 
+Both Reliability Growth Testing (RGT) and Reliability Demonstration Chart (RDC) Testing aim to evaluate the reliability of a system through the analysis of failure data over time, utilizing statistical tools to make informed decisions regarding the system's reliability and its potential risks. However, while RGT primarily focuses on assessing the improvement in reliability over time during the development phase, RDC Testing is typically conducted towards the end of the development process to demonstrate that the system meets reliability requirements before deployment or release. This distinction highlights the timing and context in which each method is employed, despite their shared goals and methodologies.
+
 # How the team work/effort was divided and managed:
+
+The Reliability Growth Testing segment of the assignment was undertaken by Andrew and Liam, while Ethan and Joseph took charge of the Reliability Demonstration Chart component in the lab. Although we primarily worked in pairs, we maintained open communication throughout the process, assisting each other with any challenges encountered along the way.
 
 # Difficulties encountered, challenges overcome, and lessons learned:
 
+**Failure Data:**
+
+Converting the failure data into the appropriate format required for reliability testing tools proved to be a challenging endeavor. The dataset utilized for C-SFRAT analysis is sourced from the CDS.DAT file. Despite our thorough search, we were unable to locate any pertinent information regarding the covariates E (execution time measured in hours), F (failure identification work measured in person hours), and C (computer time failure identification measured in hours) within the provided failure data. Consequently, we opted to solely incorporate "None" as a covariate for assessing the models' performance. 
+
+**Reliability Growth Testing:**
+
+The reliability growth testing posed challenges, particularly when we were given the option to utilize either SRTAT or C-SFRAT for comparing the predictiveness of the models. Despite exploring SRTAT, we found it lacking in providing meaningful insights for comparing the models effectively. Consequently, we opted for C-SFRAT. However, another obstacle arose when determining which specific plots were required based on the assignment description. This presented a significant challenge, as the assignment description seemed to require more types of plots than C-SFRAT could accommodate. After consideration, we ultimately concluded that the two plots effectively captured the predictability of the failure data.
+
+**Reliability Demonstration Chart:**
+
+ADD SOMETHING HERE JOSEPH
+
 # Comments/feedback on the lab itself:
+
+This lab proved to be exceptionally challenging due to the lack of explanation regarding the functionality of the tools and how they could be effectively utilized. The primary hurdle was encountered during the process of converting the failure data into the correct format. Moreover, the other failure data files provided seemed to have no discernible correlation, making it impossible to augment our selected failure data by referencing them. It appears that this lab, like many other components of the course, is in need of updating. The creation dates and last modified dates of several files indicate that they are approximately 20 years old or even older. This outdated content does not accurately reflect the current state of reliability testing practices, putting students at a disadvantage. Additionally, many of the tools featured in this lab lacked adequate documentation and were challenging to navigate. We believe that a comprehensive update or overhaul of these tools would greatly enhance the lab's comprehensibility and our overall learning experience.
