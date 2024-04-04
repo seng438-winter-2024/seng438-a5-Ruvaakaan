@@ -44,17 +44,17 @@ When making decisions based on a target failure rate, it's important to carefull
 
 # 3 plots for MTTFmin, twice and half of it for your test data:
 
-MTTFmin = 
+MTTFmin = 1.78
 
-RDC for MTTFmin * 2: 
+RDC for MTTFmin * 2: ![doubleMTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/ff550daa-36b0-4ad1-a7ba-5a9b27c4bb4b)
 
-RDC for MTTFmin * 0.5: 
+RDC for MTTFmin * 0.5: ![halfMTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/ebfaebd0-dc4b-4b44-a8ff-958682e114c3)
 
-RDC for MTTFmin: 
+RDC for MTTFmin: ![MTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/a07660be-345d-427e-ac7d-b97ade67a645)
 
 # Explain your evaluation and justification of how you decided on MTTFmin:
 
-NEEDS TO BE DONE
+To get the MTTFmin, we first calculated the MTTF of the data we used, doing so resulted in 16/9 = 1.78. This then became our anchor point and we tested different MTTF's on either side of this number and seeing the acceptability of the failure points overall. In the end we decided to keep the MTTFmin at 1.78 as it generally acceptable although some testing is needed. The main reason for this is that although we can achieve a more acceptable SUT if we lower the MTTFmin, it does not mean the overall system is better. From seeing the MTTFmin that has been set to half, we see that all the points are within the acceptable range, however, by setting the MTTF to about 0.89, it means we are expecting the system to have atleast 1 failure per week (which is the measurement for this dataset). This is the tradeoff when dealing with the MTTF as we should pick a value that correctly identifies the issues in the system while also keeping the expectations realistic.
 
 # A discussion on the advantages and disadvantages of RDC:
 
@@ -86,7 +86,7 @@ The reliability growth testing posed challenges, particularly when we were given
 
 **Reliability Demonstration Chart:**
 
-ADD SOMETHING HERE JOSEPH
+For this assignment, we used the RDC-11 EXCEL worksheet. Initially we planned to use the SRTAT to create the RDC but we opted to use RDC-11 instead as SRTAT seemed to lack the function to create charts with different MTTF's. Using RDC-11 was challenging as there are a lot of things that are unclear or confusing even after reading the documentation. Additionally it was found to be extremely challenging to modify the limits of the boundaries as it caused a lot of errors and did not work as expected. As it appeared impossible to scale the chart properly, we opted to instead minimize our points of data and were more selective with the dataset we used to avoid extending past the bounds. Doing so still provides the correct information about the data and is still a good sample of the overall failure data.
 
 # Comments/feedback on the lab itself:
 
