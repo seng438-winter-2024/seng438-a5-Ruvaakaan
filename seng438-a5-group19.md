@@ -40,6 +40,19 @@ The plot above reveals a downward trend in the number of failures within the sys
 
 When making decisions based on a target failure rate, it's important to carefully assess the reliability and performance of the system or product under consideration. The target failure rate serves as a benchmark against which the observed failure rate is compared. If the observed failure rate falls within the acceptable range defined by the target failure rate, it indicates that the system is performing as expected and meets the reliability requirements. However, if the observed failure rate exceeds the target, it suggests potential issues that need to be addressed. By analyzing failure data and comparing it to the target rate, we can identify areas for improvement, through design modifications, enhanced quality control measures, or predictive maintenance strategies. Understanding the relationship between failure rates and associated costs enables informed decision-making, weighing the trade-offs between reducing failure rates and the investment required.
 
+# A discussion on the advantages and disadvantages of reliability growth analysis
+
+Advantages:
+- Graphs produced through reliability growth analysis are able to show any time-dependent trends. This allows for data driven decision making to take place as reliability growth curves are able to make predictions about the future of data based on its current values.
+- By having a model be able to predict how data should change over time, it also allows for identification of changes that made significant altercations. The reliability growth curve predicts how the data should behave, and so when data deviates from that, reliablity growth curves make it easy to identify the change that took place to cause that unexpected altercation of the data.
+- In the development of a product or system, reliability growth analysis can allow for early detection of bugs or weaknesses in the system. In the long run this early detection system can prevent expensive failure later on.
+
+Disadvantages 
+
+ - Real world data tends to be very complex, and mathematical models aren't always able to accurately model that complexity.
+ - The accuracy of the reliability growth curve is very highly dependent on the accuracy of the failure data that the model is given. If the failure data is incomplete, inaccurate, or generally of poor quality, the reliability growth curve may produce misleading results.
+ - Reliablity growth analysis is trained off of current failure data, however systems may be able to fail in other ways later on as the system progresses. Reliablity growth analysis can't anticipate these changes particularly well due to limitations of the data it's trained on. 
+
 # Reliability Demonstration Chart Testing:
 
 # 3 plots for MTTFmin, twice and half of it for your test data:
@@ -62,7 +75,9 @@ RDC facilitates efficient analysis of a system's reliability in terms of both ti
 
 # Comparison of Results from Part 1:
 
-NEEDS TO BE DONE
+Reliability Growth Testing is done to analyze the current reliability of a system. By having a model that can predict future data trends, it can aid in the development of a system as measured values deviate from the expected data trends. Measuring progress in this way allows for resources to be directed to achieve reliability goals in an efficient manner. Should failures occur, it can be detected through this method and resources can be allocated to fix the problem.
+
+A Reliability Demonstration Chart is typically completed towards the end of the Reliability Growth Testing period. By taking collected failure data and plotting the observed failure rate of a system over time, developers can assess whether a system is on track to meet its reliability goals, and what actions should be taken based off of the current percieved reliability. During times when reliability demonstration charts are made, software updates are typically limited to critical updates or minor bug fixes, while large changes that can introduce new failure modes are discouraged at this point in the development stage.
 
 # Discussion on Similarity and Differences of the Two Techniques:
 
