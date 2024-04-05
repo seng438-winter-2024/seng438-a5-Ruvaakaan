@@ -11,7 +11,7 @@
 
 # Introduction:
 
-NEEDS TO BE DONE
+This lab aims to assess software reliability through the use of external testing tools. The two main methods of assessing software reliability is through the use of Reliability Growth Testing and Reliability Demonstration Charts. The tools we used were C-FSRAT and RDC-11.
 
 # Reliability Growth Testing:
 
@@ -57,17 +57,17 @@ Disadvantages
 
 # 3 plots for MTTFmin, twice and half of it for your test data:
 
-MTTFmin = 1.78
+MTTFmin = 1.45
 
-RDC for MTTFmin * 2: ![doubleMTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/ff550daa-36b0-4ad1-a7ba-5a9b27c4bb4b)
+RDC for MTTFmin * 2: ![doubleMTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/9ff49680-9508-41d5-8bfe-efa85ed1f905)
 
-RDC for MTTFmin * 0.5: ![halfMTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/ebfaebd0-dc4b-4b44-a8ff-958682e114c3)
+RDC for MTTFmin * 0.5: ![halfMTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/45d3ca13-5dab-41be-9691-f1cdada2bd9c)
 
-RDC for MTTFmin: ![MTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/a07660be-345d-427e-ac7d-b97ade67a645)
+RDC for MTTFmin: ![MTTF](https://github.com/seng438-winter-2024/seng438-a5-Ruvaakaan/assets/113631518/95ae0859-ac6b-415f-b801-225645ede51a)
 
 # Explain your evaluation and justification of how you decided on MTTFmin:
 
-To get the MTTFmin, we first calculated the MTTF of the data we used, doing so resulted in 16/9 = 1.78. This then became our anchor point and we tested different MTTF's on either side of this number and seeing the acceptability of the failure points overall. In the end we decided to keep the MTTFmin at 1.78 as it generally acceptable although some testing is needed. The main reason for this is that although we can achieve a more acceptable SUT if we lower the MTTFmin, it does not mean the overall system is better. From seeing the MTTFmin that has been set to half, we see that all the points are within the acceptable range, however, by setting the MTTF to about 0.89, it means we are expecting the system to have atleast 1 failure per week (which is the measurement for this dataset). This is the tradeoff when dealing with the MTTF as we should pick a value that correctly identifies the issues in the system while also keeping the expectations realistic.
+To get the MTTFmin, we first calculated the MTTF of the data we used, doing so resulted in 16/11 = 1.45. This then became our anchor point and we tested different MTTF's on either side of this number and seeing the acceptability of the failure points overall. In the end we decided to keep the MTTFmin at 1.45 as it generally acceptable although some testing is needed. Additionally, from the chart above, we see that the data points generally line up between the acceptable and need testing region. The main reason for our choice is that although we can achieve a more acceptable SUT if we lower the MTTFmin, it does not mean the overall system is better. From seeing the MTTFmin that has been set to half, we see that all the points are within the acceptable range, however, by setting the MTTF to about 0.725, it means we are expecting the system to have atleast 1 failure per week (the measurement for this dataset) which may not be acceptable. This is the tradeoff when dealing with the MTTF as we should pick a value that correctly identifies the reliability of the system while also keeping the expectations realistic.
 
 # A discussion on the advantages and disadvantages of RDC:
 
@@ -80,8 +80,6 @@ Reliability Growth Testing is done to analyze the current reliability of a syste
 A Reliability Demonstration Chart is typically completed towards the end of the Reliability Growth Testing period. By taking collected failure data and plotting the observed failure rate of a system over time, developers can assess whether a system is on track to meet its reliability goals, and what actions should be taken based off of the current percieved reliability. During times when reliability demonstration charts are made, software updates are typically limited to critical updates or minor bug fixes, while large changes that can introduce new failure modes are discouraged at this point in the development stage.
 
 # Discussion on Similarity and Differences of the Two Techniques:
-
-NEEDS TO BE EDITED
 
 Both Reliability Growth Testing (RGT) and Reliability Demonstration Chart (RDC) Testing aim to evaluate the reliability of a system through the analysis of failure data over time, utilizing statistical tools to make informed decisions regarding the system's reliability and its potential risks. However, while RGT primarily focuses on assessing the improvement in reliability over time during the development phase, RDC Testing is typically conducted towards the end of the development process to demonstrate that the system meets reliability requirements before deployment or release. This distinction highlights the timing and context in which each method is employed, despite their shared goals and methodologies.
 
@@ -101,8 +99,8 @@ The reliability growth testing posed challenges, particularly when we were given
 
 **Reliability Demonstration Chart:**
 
-For this assignment, we used the RDC-11 EXCEL worksheet. Initially we planned to use the SRTAT to create the RDC but we opted to use RDC-11 instead as SRTAT seemed to lack the function to create charts with different MTTF's. Using RDC-11 was challenging as there are a lot of things that are unclear or confusing even after reading the documentation. Additionally it was found to be extremely challenging to modify the limits of the boundaries as it caused a lot of errors and did not work as expected. As it appeared impossible to scale the chart properly, we opted to instead minimize our points of data and were more selective with the dataset we used to avoid extending past the bounds. Doing so still provides the correct information about the data and is still a good sample of the overall failure data.
+For this assignment, we used the RDC-11 EXCEL worksheet. Initially we planned to use the SRTAT to create the RDC but we opted to use RDC-11 instead as SRTAT seemed to lack the function to create charts with different MTTF's. Using RDC-11 was challenging as there are a lot of things that are unclear or confusing even after reading the documentation. Additionally it was found to be extremely challenging to modify the limits of the boundaries as it caused a lot of errors and did not work as expected, which is further worsened by the lack of proper explanation of the software. As it appeared impossible to scale the chart properly, we opted to instead minimize our points of data and were more selective with the dataset we used to avoid extending past the bounds. Doing so still provides the correct information about the data and is still a good sample of the overall failure data.
 
 # Comments/feedback on the lab itself:
 
-This lab proved to be exceptionally challenging due to the lack of explanation regarding the functionality of the tools and how they could be effectively utilized. The primary hurdle was encountered during the process of converting the failure data into the correct format. Moreover, the other failure data files provided seemed to have no discernible correlation, making it impossible to augment our selected failure data by referencing them. It appears that this lab, like many other components of the course, is in need of updating. The creation dates and last modified dates of several files indicate that they are approximately 20 years old or even older. This outdated content does not accurately reflect the current state of reliability testing practices, putting students at a disadvantage. Additionally, many of the tools featured in this lab lacked adequate documentation and were challenging to navigate. We believe that a comprehensive update or overhaul of these tools would greatly enhance the lab's comprehensibility and our overall learning experience.
+This lab proved to be exceptionally challenging due to the lack of explanation regarding the functionality of the tools and how they could be effectively utilized. The primary hurdle was encountered during the process of converting the failure data into the correct format. Moreover, the other failure data files provided seemed to have no discernible correlation, making it impossible to augment our selected failure data by referencing them. It appears that this lab, like many other components of the course, is in need of updating. Additionally, many of the tools featured in this lab lacked adequate documentation and were challenging to navigate. We believe that a comprehensive update or overhaul of these tools would greatly enhance the lab's comprehensibility and our overall learning experience.
